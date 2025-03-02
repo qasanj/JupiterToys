@@ -64,8 +64,8 @@ public class JupiterToysTests {
 
 
         // 4. Populate mandatory fields
-        driver.findElement(By.id("forename")).sendKeys("Test User");
-        driver.findElement(By.id("email")).sendKeys("test@example.com");
+        driver.findElement(By.id("forename")).sendKeys("Demo User");
+        driver.findElement(By.id("email")).sendKeys("DemoUser@example.com");
         driver.findElement(By.id("message")).sendKeys("Test message");
 
         //Explicitly wait for the errors to disappear
