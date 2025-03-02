@@ -44,11 +44,12 @@ public class JupiterToysTests {
 
         // 1. Navigate to Contact page
         driver.findElement(By.linkText("Contact")).click();
-
         Thread.sleep(3000);
+
         // 2. Click Submit button
         driver.findElement(By.xpath("//a[contains(text(),'Submit')]")).click();
-
+        Thread.sleep(3000);
+        
         // 3. Verify error messages
         String forenameError = driver.findElement(By.id("forename-err")).getText();
         System.out.println(forenameError);
